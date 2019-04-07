@@ -36,6 +36,7 @@
                                             type="text"
                                             style="margin-top:5px; margin-bottom:5px;"
                                             required
+                                            v-model="name"
                                     >
                                     </b-form-input>
                                 </b-col>
@@ -51,20 +52,21 @@
                                             type="text"
                                             style="margin-top:5px; margin-bottom:5px;"
                                             required
+                                            v-model="amount"
                                     >
                                     </b-form-input>
                                 </b-col>
                             </b-row>
 
-                            <b-button style="float:right; background-color:#55f355; border:0; margin-top:10px; color:black;" >ยืนยัน</b-button>
+                            <b-button @click="transactions.push( { name, amount } )" style="float:right; background-color:#55f355; border:0; margin-top:10px; color:black;" >ยืนยัน</b-button>
                         </b-form>
 
                         <b-col cols="12" style="background-color:white; border-radius:5px; padding:40px; margin-bottom:20px;">
                             <h1 style="text-align:left;">รายการที่เรียกเก็บเงิน</h1>
                         </b-col>
 
-                        <b-col cols="12" style="background-color:white; border-radius:5px; padding:10px; margin-bottom:20px;">
-                            <h4 style="text-align:left;">ค่าห้อง 10/11/2019 คนละ 100</h4>
+                        <b-col v-for="(tran, index) in transactions" :key="index" cols="12" style="background-color:white; border-radius:5px; padding:10px; margin-bottom:20px;">
+                            <h4 style="text-align:left;">{{tran.name}} 10/11/2019 คนละ {{tran.amount}}</h4>
                         </b-col>
 
                         <b-col cols="12" style="background-color:white; border-radius:5px; padding:40px; margin-bottom:20px;">
@@ -84,3 +86,20 @@
         </b-container>
     </div>
 </template>
+
+<script>
+export default {
+    data() {
+        return {
+        name: '',
+        amount: 0,
+        transactions: [
+            {
+                name: "ค่าห้อง",
+                amount: 98
+            }
+        ]
+    }
+    } 
+}
+</script>
