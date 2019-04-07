@@ -17,7 +17,7 @@ export default new Router({
       component: () => import('./views/dashboard.vue')
     },
     {
-      path: '/withdrawal',
+      path: '/withdraw',
       name: 'withdraw',
       component: () => import('./views/withdraw.vue')
     }
