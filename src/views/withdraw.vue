@@ -73,7 +73,7 @@
 export default {
   data () {
     return {
-      balance: 100000,
+      balance: 1999,
       currentTitle: '',
       amount: 0,
       transactions: [
