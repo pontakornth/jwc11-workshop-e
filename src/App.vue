@@ -31,6 +31,11 @@
 
 html{
   font-family: Kanit;
+  
+}
+
+html,body {
+  height: 100%;
 }
 
 </style>
