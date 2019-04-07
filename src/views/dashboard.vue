@@ -66,7 +66,7 @@
                         </b-col>
 
                         <b-col v-for="(tran, index) in transactions" :key="index" cols="12" style="background-color:white; border-radius:5px; padding:10px; margin-bottom:20px;">
-                            <h4 style="text-align:left;">{{tran.name}} 10/11/2019 คนละ {{tran.amount.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",")}}</h4>
+                            <h4 style="text-align:left;">{{tran.name}} 10/11/2019 คนละ {{tran.amount.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",")}} บาท</h4>
                         </b-col>
 
                         <b-col cols="12" style="background-color:white; border-radius:5px; padding:40px; margin-bottom:20px;">

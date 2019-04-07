@@ -46,7 +46,7 @@
                                 <b-col cols="12" style="margin-top:60px;">
                                 <div v-for="tran in transactions" :key="tran.id" class="card" style="margin-bottom:10px;">
                                     <h1>{{ tran.title }}</h1>
-                                    <h2>จำนวน : {{ tran.amount.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",") }} </h2>
+                                    <h2>จำนวน : {{ tran.amount.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",") }} บาท </h2>
 
                                     <h3>สถานะ : {{ tran.status}}</h3>
                                     <h3>เบิกโดย : {{ tran.issuedUserId }}</h3>
