@@ -87,7 +87,7 @@ export default {
         },
         {
           id: 1287,
-          amount: 1000,
+          amount: 150,
           title: 'ไม้ถู',
           status: 'ยังไม่อนุมัติ',
           issuedUserId: 'นางสาวจันทรา'
