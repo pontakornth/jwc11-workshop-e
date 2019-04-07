@@ -20,6 +20,11 @@ export default new Router({
       path: '/withdrawal',
       name: 'withdraw',
       component: () => import('./views/withdraw.vue')
+    },
+    {
+      path: '/',
+      name: 'home',
+      redirect: '/login'
     }
   ]
 })
