@@ -66,6 +66,21 @@ const DB = {
       type: 'WITHDRAW',
       status: 'CONFIRMED',
       issuedUserId: 37516
+    },
+    {
+      id: 1286,
+      amount: 10,
+      title: 'รวมเงินค่าซ่อมพัดลม',
+      type: 'DEPOSIT',
+      status: 'CONFIRMED',
+      issuedUserId: 37516,
+      paidUsers: [
+        37512,
+        37513,
+        37514,
+        37515,
+        37516
+      ]
     }
   ]
 }
