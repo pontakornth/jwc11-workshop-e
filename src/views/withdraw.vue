@@ -53,7 +53,7 @@
                                     <b-row>
                                       <b-col cols="5"></b-col>
                                       <b-col cols="2">
-                                      <a href="#" @click="confirm(tran)" class="btn btn-primary ">อนุมัติ</a>
+                                      <a v-if="tran.status !== 'อนุมัติแล้ว'" href="#" @click="confirm(tran)" class="btn btn-primary ">อนุมัติ</a>
                                       </b-col>
                                       <b-col cols="5"></b-col>
                                     </b-row>
