@@ -24,4 +24,13 @@
   }
 }
 
+@font-face {
+  font-family: Kanit;
+  src: url(./assets/fonts/Kanit-Regular.ttf);
+}
+
+html{
+  font-family: Kanit;
+}
+
 </style>
