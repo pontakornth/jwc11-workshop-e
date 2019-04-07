@@ -72,7 +72,7 @@ export default {
           amount: 10,
           title: 'ค่าไม้ถู',
           status: 'ยังไม่อนุมัติ',
-          issuedUserId: 'นางสาวจันทรา',
+          issuedUserId: 'นางสาวจันทรา'
         }
       ]
     }
@@ -90,7 +90,7 @@ export default {
     confirm (tran) {
       this.transactions.forEach(x => {
         if (x.id === tran.id) {
-          tran.status = "อนุมัติแล้ว"
+          tran.status = 'อนุมัติแล้ว'
         }
       })
     }
