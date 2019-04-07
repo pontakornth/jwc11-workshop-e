@@ -12,8 +12,8 @@
                                 <img src="../assets/profile.png" style="height:100px; width:100px; background-color:white; border-radius:100px; margin-top:60px; margin-bottom:25px;"><br>
                                 <p style="color:white; font-size:25px; margin-bottom:28px;">Name</p>
 
-                                <b-button style="width:100%; height:40px; margin-bottom:20px;">ยอดค้างชำระ</b-button>
-                                <b-button style="width:100%; height:40px; margin-bottom:20px;">เบิกจ่าย</b-button>
+                                <router-link class="btn btn-primary" to="/dashboard" style="width:100%; height:40px; margin-bottom:20px;">ยอดค้างชำระ</router-link>
+                                <router-link class="btn btn-primary" to="/withdrawl" style="width:100%; height:40px; margin-bottom:20px;">เบิกจ่าย</router-link>
                                 <b-button style="width:92%; height:40px; margin-left:10px; margin-bottom:30px; position: absolute; left: 0; bottom: 0;">ออกจากระบบ</b-button>
                             </div>
 
