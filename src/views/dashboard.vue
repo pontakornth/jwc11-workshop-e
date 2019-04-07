@@ -10,7 +10,7 @@
                                 <p style="color:white; font-size:25px; margin-bottom:28px;">Name</p>
 
                                 <router-link class="btn" to="/dashboard" style="width:100%; height:40px; margin-bottom:20px;">ยอดค้างชำระ</router-link>
-                                <router-link class="btn" to="/withdrawal" style="width:100%; height:40px; margin-bottom:20px;">เบิกจ่าย</router-link>
+                                <router-link class="btn" to="/withdraw" style="width:100%; height:40px; margin-bottom:20px;">เบิกจ่าย</router-link>
                                 <b-button style="width:92%; height:40px; margin-left:10px; margin-bottom:30px; position: absolute; left: 0; bottom: 0;">ออกจากระบบ</b-button>
                             </div>
 
