@@ -6,7 +6,7 @@
                 <b-col cols="2" style="background-color:#15404E;">
 
                             <div style="height: 100vh;">
-                                <img src="../assets/profile.png" style="height:100px; width:100px; background-color:white; border-radius:100px; margin-top:60px; margin-bottom:25px;"><br>
+                                <img src="../assets/profile1.png" style="height:100px; width:100px; background-color:white; border-radius:100px; margin-top:60px; margin-bottom:25px;"><br>
                                 <p style="color:white; font-size:25px; margin-bottom:28px;">ไก่จ๋า ไม่ทำเเล้ว</p>
 
                                 <router-link class="btn btn-light" to="/dashboard" style="width:100%; height:40px; margin-bottom:20px;">ยอดค้างชำระ</router-link>
