@@ -23,7 +23,7 @@
                     </b-col>
 
                     <b-col cols="12" style="background-color:#18a1ba; min-height:100vh;">
-                        <h1 style="text-align:left; color:#faff00; padding-top:20px; padding-left:20px;">สร้างรายกายเรียกเก็บเงิน</h1>
+                        <h1 style="text-align:left; color:#faff00; padding-top:20px; padding-left:20px;">สร้างรายการเรียกเก็บเงิน</h1>
 
                         <b-form style="padding:20px; margin-bottom:40px;">
                             <b-row style="background-color:white; border-radius:5px;">
