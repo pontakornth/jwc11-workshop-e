@@ -2,11 +2,8 @@
     <div >
         <b-container fluid >
             <b-row>
-                <b-col style="margin:0;">
-
-                    <b-row style="">
-                    
-                        <b-col md="2" style="background-color:#15404E;">
+ 
+                <b-col cols="2" style="background-color:#15404E;">
 
                             <div style="height: 100vh;">
                                 <img src="../assets/profile.png" style="height:100px; width:100px; background-color:white; border-radius:100px; margin-top:60px; margin-bottom:25px;"><br>
@@ -17,17 +14,73 @@
                                 <b-button style="width:100%; height:40px; ">ออกจากระบบ</b-button>
                             </div>
 
-                        </b-col>
+                </b-col>
 
-                        <div class="col-10" style="background-color:#15404E; height:250px; width:100%; padding-top:50px;">
+                <b-col cols="10" style=" width:100%; padding:0;">
+                    <b-col cols="12" style="background-color:#15404E; height:250px; padding-top:50px;">
                             <p style="color:white; font-size:40px;">ยอดเงินในบัญชี</p>
                             <p style="color:white; font-size:60px;">100,000.00 <span style="font-size:30px;">บาท</span></p>
-                        </div>
+                    </b-col>
 
-                    </b-row>
+                    <b-col cols="12" style="background-color:#18a1ba; height:100vh;">
+                        <h1 style="text-align:left; color:#faff00; padding-top:20px; padding-left:20px;">สร้างรายกายเรียกเก็บเงิน</h1>
 
+                        <b-form style="padding:20px; margin-bottom:40px;">
+                            <b-row style="background-color:white; border-radius:5px;">
+                                <b-col cols="1" style="padding:10px;">
+                                    <span>เรียกเก็บค่า</span>
+                                </b-col>
+                                <b-col cols="11">
+                                    <b-form-input
+                                            id="what-input"
+                                            type="text"
+                                            style="margin-top:5px; margin-bottom:5px;"
+                                            required
+                                    >
+                                    </b-form-input>
+                                </b-col>
+                            </b-row>
+
+                            <b-row style="background-color:white; margin-top:10px; border-radius:5px;">
+                                <b-col cols="1" style="padding:10px;">
+                                    <span>จำนวนเงิน</span>
+                                </b-col>
+                                <b-col cols="11">
+                                    <b-form-input
+                                            id="howmuch-input"
+                                            type="text"
+                                            style="margin-top:5px; margin-bottom:5px;"
+                                            required
+                                    >
+                                    </b-form-input>
+                                </b-col>
+                            </b-row>
+
+                            <b-button style="float:right; background-color:#55f355; border:0; margin-top:10px; color:black;" >ยืนยัน</b-button>
+                        </b-form>
+
+                        <b-col cols="12" style="background-color:white; border-radius:5px; padding:40px; margin-bottom:20px;">
+                            <h1 style="text-align:left;">รายการที่เรียกเก็บเงิน</h1>
+                        </b-col>
+
+                        <b-col cols="12" style="background-color:white; border-radius:5px; padding:10px; margin-bottom:20px;">
+                            <h4 style="text-align:left;">ค่าห้อง 10/11/2019 คนละ 100</h4>
+                        </b-col>
+
+                        <b-col cols="12" style="background-color:white; border-radius:5px; padding:40px; margin-bottom:20px;">
+                            <h1 style="text-align:left;">รายการที่สมาชิกยังจ่ายไม่ครบ</h1>
+                        </b-col>
+
+                        <b-col cols="12" style="background-color:white; border-radius:5px; padding:40px; margin-bottom:20px;">
+                            <h1 style="text-align:left;">รายการที่เสร็จสิ้นเเล้ว</h1>
+                        </b-col>
+
+                    </b-col>
                 </b-col>
+
+
             </b-row>
+
         </b-container>
     </div>
 </template>
