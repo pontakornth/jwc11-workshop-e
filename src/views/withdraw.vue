@@ -8,9 +8,9 @@
                                 <img src="../assets/profile.png" style="height:100px; width:100px; background-color:white; border-radius:100px; margin-top:60px; margin-bottom:25px;"><br>
                                 <p style="color:white; font-size:25px; margin-bottom:28px;">Name</p>
 
-                                <b-button style="width:100%; height:40px; margin-bottom:20px;">ยอดค้างชำระ</b-button>
-                                <b-button style="width:100%; height:40px; margin-bottom:20px;">เบิกจ่าย</b-button>
-                                <b-button style="width:100%; height:40px; ">ออกจากระบบ</b-button>
+                                <router-link class="btn btn-primary" to="/dashboard" style="width:100%; height:40px; margin-bottom:20px;">ยอดค้างชำระ</router-link>
+                                <router-link class="btn btn-primary" to="/withdrawl" style="width:100%; height:40px; margin-bottom:20px;">เบิกจ่าย</router-link>
+                                <b-button style="width:92%; height:40px; margin-left:10px; margin-bottom:30px; position: absolute; left: 0; bottom: 0;">ออกจากระบบ</b-button>
                             </div>
 
                 </b-col>
@@ -83,7 +83,7 @@ export default {
           amount: 10,
           title: 'ค่าไม้ถู',
           status: 'ยังไม่อนุมัติ',
-          issuedUserId: 'นางสาวจันทรา',
+          issuedUserId: 'นางสาวจันทรา'
         }
       ]
     }
@@ -101,7 +101,7 @@ export default {
     confirm (tran) {
       this.transactions.forEach(x => {
         if (x.id === tran.id) {
-          tran.status = "อนุมัติแล้ว"
+          tran.status = 'อนุมัติแล้ว'
         }
       })
     }

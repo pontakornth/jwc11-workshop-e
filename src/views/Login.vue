@@ -30,7 +30,7 @@
                                     placeholder="Password"
                                 ></b-form-input>
 
-                                <b-button type="submit" style="width:200px; background-color:#55f355">Login</b-button>
+                                <router-link class="btn" to="/dashboard" type="submit" style="width:200px; background-color:#55f355">Login</router-link>
 
                             </b-form>
                         </b-col>

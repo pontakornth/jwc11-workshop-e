@@ -31,7 +31,7 @@
 
 html{
   font-family: Kanit;
-  
+
 }
 
 html,body {
