@@ -18,7 +18,7 @@
                 <div class="col-10" style="width:100%; padding:0;">
                           <b-col cols="12" style="background-color:#15404E; height:250px; padding-top:50px;">
                                   <p style="color:white; font-size:40px;">ยอดเงินในบัญชี</p>
-                                  <p style="color:white; font-size:60px;">{{ balance }} <span style="font-size:30px;">บาท</span></p>
+                                  <p style="color:white; font-size:60px;">{{ balance }}.00 <span style="font-size:30px;">บาท</span></p>
                           </b-col>
 
                           <b-col cols="12" style="background-color:#18a1ba; height:100vh; padding-top:10px;">
@@ -35,7 +35,7 @@
 
                                 <div class="card" style="padding:0px;">
                                   <b-row style="padding:20px;">
-                                    <b-col cols="1"><label>ปริมาณเงิน</label></b-col>
+                                    <b-col cols="1"><label>จำนวนเงิน</label></b-col>
                                     <b-col cols="11"><b-input v-model="amount" type="text" /></b-col>
                                    </b-row>
                       
