@@ -72,7 +72,7 @@ export default new Vuex.Store({
       commit('updateTransaction', { ...transaction, paidUsers: [...transaction.paidUsers, payload.userId] })
     },
     confirmWithdraw ({ commit, state }, targetId) {
-      const targetTransaction = state.transaction.find(x => { return x.id === targetId })
+      const targetTransaction = state.DB.transaction.find(x => { return x.id === targetId })
       commit('updateTransaction', { ...targetTransaction, status: 'CONFIRMED' })
       commit('reduceMoney', targetTransaction)
     }
@@ -83,6 +83,21 @@ export default new Vuex.Store({
     },
     getAllTransactions (state) {
       return state.DB.transactions
+    },
+    getPaymentStatusById (state) {
+      return (userId, transactionId) => {
+        const targetTransaction = state.DB.transactions.find(x => { return x.id === transactionId })
+        const paidUsers = targetTransaction.paidUsers
+        const allUserIds = state.DB.users.map(user => { return user.id })
+        const allPaid = paidUsers.length === allUserIds.length
+        if (allPaid) {
+          return 'จ่ายครบทุกคนแล้ว'
+        } else if (paidUsers.indexOf(userId) !== -1 && !allPaid) {
+          return `จ่ายแล้ว แต่มีคนยังไม่จ่าย ${allUserIds.length - paidUsers} คน`
+        } else if (paidUsers.indexOf(userId) === -1) {
+          return 'ยังไม่ได้จ่าย'
+        }
+      }
     }
   }
 })
