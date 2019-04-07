@@ -26,12 +26,11 @@
 
 @font-face {
   font-family: Kanit;
-  src: url(./assets/fonts/Kanit-Regular.ttf);
+  src: url(assets/fonts/Kanit-Regular.ttf);
 }
 
-html{
-  font-family: Kanit;
-
+div{
+    font-family: Kanit;
 }
 
 html,body {
