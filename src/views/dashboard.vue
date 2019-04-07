@@ -22,7 +22,7 @@
                             <p style="color:white; font-size:60px;">100,000.00 <span style="font-size:30px;">บาท</span></p>
                     </b-col>
 
-                    <b-col cols="12" style="background-color:#18a1ba; height:100vh;">
+                    <b-col cols="12" style="background-color:#18a1ba; min-height:100vh;">
                         <h1 style="text-align:left; color:#faff00; padding-top:20px; padding-left:20px;">สร้างรายกายเรียกเก็บเงิน</h1>
 
                         <b-form style="padding:20px; margin-bottom:40px;">
