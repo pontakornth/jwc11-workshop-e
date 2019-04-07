@@ -79,16 +79,16 @@ export default {
       transactions: [
         {
           id: 1289,
-          amount: 30,
-          title: 'ค่าไม้กวาด',
+          amount: 300,
+          title: 'ไม้กวาด',
           issuedUserId: 'นายอนุชิต',
           status: 'อนุมัติแล้ว',
           type: 'WITHDRAW'
         },
         {
           id: 1287,
-          amount: 10,
-          title: 'ค่าไม้ถู',
+          amount: 1000,
+          title: 'ไม้ถู',
           status: 'ยังไม่อนุมัติ',
           issuedUserId: 'นางสาวจันทรา'
         }
