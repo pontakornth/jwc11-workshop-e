@@ -1,7 +1,7 @@
 <template>
     <b-card>
         <b-media>
-            
+
         </b-media>
     </b-card>
 </template>
