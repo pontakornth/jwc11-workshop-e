@@ -50,7 +50,7 @@
 
                                     <h3>สถานะ : {{ tran.status}}</h3>
                                     <h3>เบิกโดย : {{ tran.issuedUserId }}</h3>
-                                    <b-row>
+                                    <b-row style="margin-bottom: 10px;">
                                       <b-col cols="5"></b-col>
                                       <b-col cols="2">
                                       <a v-if="tran.status !== 'อนุมัติแล้ว'" href="#" @click="confirm(tran)" class="btn btn-primary ">อนุมัติ</a>
