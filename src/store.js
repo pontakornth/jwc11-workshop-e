@@ -48,6 +48,7 @@ export default new Vuex.Store({
         title: detail.title,
         amount: detail.amount,
         type: detail.type,
+        date: Date(),
         status: 'WAITING'
       }
       switch (detail.type) {
@@ -69,14 +70,19 @@ export default new Vuex.Store({
       const transaction = state.DB.transactions.find(x => { return x.id === payload.id })
       commit('addMoney', transaction.amount)
       commit('updateTransaction', { ...transaction, paidUsers: [...transaction.paidUsers, payload.userId] })
+    },
+    confirmWithdraw ({ commit, state }, targetId) {
+      const targetTransaction = state.transaction.find(x => { return x.id === targetId })
+      commit('updateTransaction', { ...targetTransaction, status: 'CONFIRMED' })
+      commit('reduceMoney', targetTransaction)
     }
   },
   getters: {
     getAllUsers (state) {
       return state.DB.users
     },
-    getAllHistories (state) {
-      return state.DB.histories
+    getAllTransactions (state) {
+      return state.DB.transactions
     }
   }
 })
