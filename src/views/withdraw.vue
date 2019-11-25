@@ -8,13 +8,13 @@
                                   <p style="color:white; font-size:60px;">{{ balance.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",") }}.00 <span style="font-size:30px;">บาท</span></p>
                           </b-col>
 
-                          <b-col cols="12" style="background-color:#18a1ba; min-height:100vh; padding-top:10px;">
+                          <b-col class="mx-auto" cols="12" lg="10"  style="background-color:#18a1ba; min-height:100vh; padding-top:10px;">
 
                                <div class="card" style="padding:0px; margin-bottom:20px;">
 
                                    <b-row style="padding:20px;">
-                                    <b-col cols="1"><label>สาเหตุการเบิก</label></b-col>
-                                    <b-col cols="11"><b-input v-model="currentTitle" type="text" /></b-col>
+                                    <b-col cols="12" lg="1"><label>สาเหตุการเบิก</label></b-col>
+                                    <b-col cols="12" lg="11"><b-input v-model="currentTitle" type="text" /></b-col>
 
                                    </b-row>
 
@@ -22,8 +22,8 @@
 
                                 <div class="card" style="padding:0px;">
                                   <b-row style="padding:20px;">
-                                    <b-col cols="1"><label>จำนวนเงิน</label></b-col>
-                                    <b-col cols="11"><b-input v-model="amount" type="text" /></b-col>
+                                    <b-col cols="12" lg="1" ><label>จำนวนเงิน</label></b-col>
+                                    <b-col cols="12" lg="11"><b-input v-model="amount" type="text" /></b-col>
                                    </b-row>
                       
                                 </div>
@@ -31,20 +31,24 @@
                                 <b-button  @click="addTransaction" type="submit" style="float:right; background-color:#55f355; border:0; margin-top:10px; color:black;" >ยืนยัน</b-button>
 
                                 <b-col cols="12" style="margin-top:60px;">
-                                <div v-for="tran in transactions" :key="tran.id" class="card" style="margin-bottom:10px;">
-                                    <h1>{{ tran.title }}</h1>
-                                    <h2>จำนวน : {{ tran.amount.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",") }} บาท </h2>
-
-                                    <h3>สถานะ : {{ tran.status}}</h3>
-                                    <h3>เบิกโดย : {{ tran.issuedUserId }}</h3>
-                                    <b-row style="margin-bottom: 10px;">
-                                      <b-col cols="5"></b-col>
-                                      <b-col cols="2">
-                                      <a v-if="tran.status !== 'อนุมัติแล้ว'" href="#" @click="confirm(tran)" class="btn btn-primary ">อนุมัติ</a>
-                                      </b-col>
-                                      <b-col cols="5"></b-col>
-                                    </b-row>
-                                </div>
+                                <b-col cols="12">
+                                  <b-row>
+                                    <b-col v-for="tran in transactions" :key="tran.id" class="card" cols="12" lg="4" style="margin-bottom:10px;">
+                                        <h1>{{ tran.title }}</h1>
+                                        <h2>จำนวน : {{ tran.amount.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",") }} บาท </h2>
+    
+                                        <h3>สถานะ : {{ tran.status}}</h3>
+                                        <h3>เบิกโดย : {{ tran.issuedUserId }}</h3>
+                                        <b-row style="margin-bottom: 10px;">
+                                          <b-col cols="5"></b-col>
+                                          <b-col cols="2">
+                                          <a v-if="tran.status !== 'อนุมัติแล้ว'" href="#" @click="confirm(tran)" class="btn btn-primary ">อนุมัติ</a>
+                                          </b-col>
+                                          <b-col cols="5"></b-col>
+                                        </b-row>
+                                    </b-col>
+                                  </b-row>
+                                </b-col>
                                 </b-col>
                             
                           
