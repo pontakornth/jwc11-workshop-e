@@ -2,7 +2,7 @@
     <div>
         <b-container fluid >
             <b-row>
-                <b-col col-6 style="background-color:#18a1ba; height:970px;">
+                <b-col col-6 class="d-none d-lg-block" style="background-color:#18a1ba; height:970px;">
                     <img src="../assets/logo.png" width="100%" height="100%">
                 </b-col>
                 <b-col col-6>

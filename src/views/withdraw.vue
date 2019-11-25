@@ -2,21 +2,8 @@
     <div>
         <b-container fluid>
             <b-row>
-                <b-col cols="2" style="background-color:#15404E;">
-
-                            <div style="height: 100vh;">
-                                <img src="../assets/profile1.png" style="height:100px; width:100px; background-color:white; border-radius:100px; margin-top:60px; margin-bottom:25px;"><br>
-                                <p style="color:white; font-size:25px; margin-bottom:28px;">ไก่จ๋า ไม่ทำเเล้ว</p>
-
-                                <router-link class="btn btn-light" to="/dashboard" style="width:100%; height:40px; margin-bottom:20px;">ยอดค้างชำระ</router-link>
-                                <router-link class="btn btn-light" to="/withdraw" style="width:100%; height:40px; margin-bottom:20px;">เบิกจ่าย</router-link>
-                                <b-button style="width:92%; height:40px; margin-left:10px; margin-bottom:30px; position: absolute; left: 0; bottom: 0;">ออกจากระบบ</b-button>
-                            </div>
-
-                </b-col>
-
-                <div class="col-10" style="width:100%; padding:0;">
-                          <b-col cols="12" style="background-color:#15404E; height:250px; padding-top:50px;">
+                <b-col cols="12" style="background-color:#15404E; width:100%; padding:0;">
+                          <b-col cols="12" style=" padding-bottom: 10px; padding-top:50px;">
                                   <p style="color:white; font-size:40px;">ยอดเงินในบัญชี</p>
                                   <p style="color:white; font-size:60px;">{{ balance.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",") }}.00 <span style="font-size:30px;">บาท</span></p>
                           </b-col>
@@ -62,7 +49,7 @@
                             
                           
                           </b-col>
-                </div>
+                </b-col>
 
             </b-row>
         </b-container>
