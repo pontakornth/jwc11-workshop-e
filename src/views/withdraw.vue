@@ -1,5 +1,6 @@
 <template>
     <div>
+        <nav-bar/>
         <b-container fluid>
             <b-row>
                 <b-col cols="12" style="background-color:#15404E; width:100%; padding:0;">
@@ -61,7 +62,11 @@
 </template>
 
 <script>
+import NavBar from '../components/NavBar.vue'
 export default {
+  components:{
+    NavBar
+  },
   data () {
     return {
       balance: 1999,
