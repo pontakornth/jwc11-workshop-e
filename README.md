@@ -1,4 +1,6 @@
-# souce
+# JWC 11 Workshop E (HeyHelper)
+
+This is forked to improve responsiveness and not to disturb other's work with my own addition.
 
 ## Project setup
 ```
